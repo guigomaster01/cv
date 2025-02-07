@@ -8,5 +8,5 @@ export default defineConfig({
   integrations: [tailwind(), icon(), compress(), sitemap()],
   output: "static", // Alterado para static
   site: 'https://guigomaster01.github.io',
-  base: '/resume', // Caminho base do repositório
+  base: '/curriculo', // Caminho base do repositório
 });
