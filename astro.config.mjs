@@ -3,10 +3,13 @@ import compress from "astro-compress";
 import icon from "astro-icon";
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap"; // Opcional, mas recomendado para SEO
+import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   integrations: [tailwind(), icon(), compress(), sitemap()],
-  output: "static", // Alterado para static
-  site: 'https://guigomaster01.github.io',
-  base: '/curriculo', // Caminho base do repositório
+  //output: "static", // Alterado para static
+  //site: 'https://guigomaster01.github.io',
+  //base: '/curriculo', // Caminho base do repositório
+  output: 'server',
+  adapter: vercel(),
 });
